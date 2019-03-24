@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build debug",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "msbuild build/vs2017/Envrionmentica.sln /p:configuration=debug /p:platform=x64 /m",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Run debug",
+            "type": "shell",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "command": "msbuild build/vs2017/Envrionmentica.sln /p:configuration=debug /p:platform=x64 /m && ${workspaceRoot}/build/vs2017/bin/x86_64/Debug/Editor.exe"
+        }
+    ]
+}
