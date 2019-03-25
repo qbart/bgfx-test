@@ -45,6 +45,7 @@ project "Editor"
 	files { "src/**.cpp" }
 	includedirs
 	{
+		path.join("include"),
 		path.join(BGFX_DIR, "include"),
 		path.join(BX_DIR, "include"),
 		path.join(GLFW_DIR, "include")
