@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	// Create a GLFW window without an OpenGL context.
 	glfwSetErrorCallback(glfw_errorCallback);
 
-	Window wnd;
+	ee::Window wnd;
 	if (!wnd.init(1024, 768, "Environmentica"))
 		return 1;
 

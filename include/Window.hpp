@@ -2,6 +2,8 @@
 
 #include <GLFW/glfw3.h>
 
+namespace ee {
+
 class Window
 {
   public:
@@ -24,3 +26,5 @@ class Window
     int width;
     int height;
 };
+
+}

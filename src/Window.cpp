@@ -10,6 +10,8 @@
 #endif
 #include <GLFW/glfw3native.h>
 
+namespace ee {
+
 Window::Window()
 {
 }
@@ -87,4 +89,6 @@ int Window::getKey(int key) const
 void Window::setKeyCallback(GLFWkeyfun fn)
 {
 	glfwSetKeyCallback(window, fn);
+}
+
 }
