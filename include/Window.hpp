@@ -18,8 +18,8 @@ class Window
     int getKey(int key) const;
     void setKeyCallback(GLFWkeyfun fn);
 
-    uint32_t getWidth() const { return (uint32_t)width; }
-    uint32_t getHeight() const { return (uint32_t)height; }
+    uint32_t getCachedWidth() const { return (uint32_t)width; }
+    uint32_t getCachedHeight() const { return (uint32_t)height; }
 
   private:
     GLFWwindow *window = nullptr;

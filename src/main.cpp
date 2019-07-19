@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		glfwPollEvents();
 
 		if (wnd.wasResized()) {
-			bgfx::reset(wnd.getWidth(), wnd.getHeight(), BGFX_RESET_VSYNC);
+			bgfx::reset(wnd.getCachedWidth(), wnd.getCachedHeight(), BGFX_RESET_VSYNC);
 			bgfx::setViewRect(kClearView, 0, 0, bgfx::BackbufferRatio::Equal);
 		}
 
