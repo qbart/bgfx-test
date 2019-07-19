@@ -11,7 +11,7 @@ local WIN_SDK_VERSION = "10.0.17763.0"
 solution "Envrionmentica"
 	location(BUILD_DIR)
 	startproject "Editor"
-	configurations { "Release", "Debug" }
+	configurations { "Debug", "Release" }
 	if os.is64bit() and not os.istarget("windows") then
 		platforms "x86_64"
 	else
